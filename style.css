@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+    background: #000;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+#box{
+    height: 400px;
+    width: 400px;
+    background: rgb(20, 120, 90);
+    border: 2px solid wheat;
+    border-radius: 10px;
+}
+button{
+    padding: 10px 20px;
+    background: crimson;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:active{
+   scale: 0.95;
+}
+
+@media (max-width:500px) {
+    #box{
+        height: 300px;
+        width: 300px;
+    }
+}
